@@ -37,8 +37,16 @@ public class MyServiceTest{
         verify(mockApi).getData();
         logger.info("testExternalApi: result={}",result);
 
-
-
+    }
+        @Test
+        public void testVerifyInteraction(){
+            logger.info("Act : calling fetchData() ");
+            service.fetchData();
+            
+            logger.info("verifies mackApi was called");
+            verify(mockApi).getData(); 
+            logger.info("testVerifyInteraction passed and was called exactly once");
+        }
+ 
 
     }
-}
