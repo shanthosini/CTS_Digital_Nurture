@@ -1,0 +1,34 @@
+Git Cleanup & Push Back Lab — Evidence
+=======================================
+
+Objective: Clean up and push back to remote Git
+
+Step 1: Verify clean state
+Command: git status
+Output:
+  On branch main
+  Your branch is up to date with 'origin/main'.
+  nothing to commit, working tree clean
+
+Step 2: List all branches
+Command: git branch -a
+Output:
+  * main
+    remotes/origin/main
+
+Step 3: Pull from remote
+Command: git pull origin main
+Output:
+  From https://github.com/shanthosini/CTS_Digital_Nurture
+   * branch            main       -> FETCH_HEAD
+  Already up to date.
+
+Step 4: Push to remote
+Command: git push origin main
+Output:
+  Everything up-to-date
+
+Step 5: Verified sync
+Local and remote main both point to the same commit.
+
+Lab complete.
